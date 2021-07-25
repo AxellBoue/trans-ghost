@@ -1,0 +1,221 @@
+﻿{
+"allDialogues":[
+	{"id":0, "textes":[
+		{"name":"Ando",
+		"texte_fr" : "Salut, ravi de te rencontrer, même si on est désolé.e.s que tu soit mort",
+		"texte_en" : "test english 1",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Boby",
+		"texte_fr" : "Pardon pour la téléportation un peu brutale. On t'as récupéré ici pour t'éviter de te retrouver à errer au milieu des dyacishétéros.",
+		"texte_en" : "test english 2",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Ando",
+		"texte_fr" : "Ici c'est une ville de personnes queers, vu qu'on attéri presque toustes en enfer autant se regrouper haha.",
+		"texte_en" : "test english 1",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Boby",
+		"texte_fr" : "On est désolé que la transphobie t'ai poussé à autant de désespoir. Mais on a une bonne nouvelle !",
+		"texte_en" : "test english 3",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Boby",
+		"texte_fr" : "On a bricolé une machine pour que tu puisse retourner sur terre, dans ton passé, et que tu utilises tes nouveaux pouvoirs de fantôme pour te construire un environement dans lequel tu auras envie de retourner vivre.",
+		"texte_en" : "test english 3",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Alex",
+		"texte_fr" : "Merci, mais... C'est pas possible, mon père changera jamais d'avis.",
+		"texte_en" : "test english 3",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Ando",
+		"texte_fr" : "Oh si je t'assure, éduquer les transphobes c'est notre spécialité",
+		"texte_en" : "test english 1",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Alex",
+		"texte_fr" : "De toute façon je suis mort, c'est bon c'est fini. J'ai pas envie d'y retourner.",
+		"texte_en" : "test english 3",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Boby",
+		"texte_fr" : "Même si tes parents te soutenaient et devenaient militant.e.s queer à tes cotés ?",
+		"texte_en" : "test english 3",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Alex",
+		"texte_fr" : "...",
+		"texte_en" : "...",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Boby",
+		"texte_fr" : "Tu peux prendre ton temps pour y réfléchir, grâce à notre machine tu peux retourner dans le temps quand tu veux.",
+		"texte_en" : "test english 3",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Ando",
+		"texte_fr" : "Tant que tu ne t'éloignes pas trop d'elle tu n'est pas définitivement mort",
+		"texte_en" : "test english 1",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Alex", 
+		"texte_fr" : "n° 12",
+		"texte_en" : "bla",
+		"questions_fr": [{"question1" : "Et pourquoi vous y retournez pas vous si c'est si bien ?",
+							"goTo1" : 14,
+							"question2" : "Je suis votre cobaye c'est ça ?",
+							"goTo2" : 17,
+							"question3" : "C'est vraiment possible de faire changer mon père ?",
+							"goTo3" : 19,
+							"question4" : "Et ma mère ?",
+							"goTo4" : 24,
+							"finishSendTo" : 0
+						}],
+		"questions_en": []
+		},
+		{"name":"Alex", 
+		"texte_fr" : "n° 13",
+		"texte_en" : "bla",
+		"questions_fr": [{"question1" : "Et pourquoi vous y retournez pas vous si c'est si bien ?",
+							"goTo1" : 14,
+							"question2" : "Je suis votre cobaye c'est ça ?",
+							"goTo2" : 17,
+							"question3" : "Ok je vais y réfléchir.",
+							"goTo3" : 27,
+							"question4" : "Et ma mère ?",
+							"goTo4" : 26,
+							"finishSendTo" : 0
+						}],
+		"questions_en": []
+		},
+		{"name":"Ando",
+		"texte_fr" : "C'est trop tard pour nous, on est mort.e.s il y a trop longtemps.",
+		"texte_en" : "test english 1",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Boby",
+		"texte_fr" : "Et de notre temps le remonteur de temps n'existait pas, on l'a mis au point il y a quelques années seulement.",
+		"texte_en" : "test english 1",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Boby",
+		"texte_fr" : "back to question",
+		"texte_en" : "16",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Ando",
+		"texte_fr" : "Non non, on a déjà aidé des dizaines de queers dans ton cas.",
+		"texte_en" : "test english 1",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Ando",
+		"texte_fr" : "back to question",
+		"texte_en" : "18",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Ando",
+		"texte_fr" : "Oui, faire changer les parents c'est notre spécialité.",
+		"texte_en" : "21",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Ando",
+		"texte_fr" : "Je sais pas si t'as déjà vu ces chiffres, mais le rôle de la famille est crucial pour le bien être des personnes trans.",
+		"texte_en" : "21",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Ando",
+		"texte_fr" : "Avec des parents transphobes XX% des jeunes trans pensent au suicide, contre seulement XX% avec des parents qui les respectent.",
+		"texte_en" : "21",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"change retour questions",
+		"texte_fr" : "13",
+		"texte_en" : "2",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Ando",
+		"texte_fr" : "back to question",
+		"texte_en" : "23",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Boby",
+		"texte_fr" : "On vous a un peu observé et on a vu qu'elle te genre correctement dès que ton père est pas là.",
+		"texte_en" : "0",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Boby",
+		"texte_fr" : "C'est pas encore l'alliée parfaite mais avec un peu de temps elle devrait le devenir sans notre aide.",
+		"texte_en" : "0",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Boby",
+		"texte_fr" : "back to question",
+		"texte_en" : "26",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Boby",
+		"texte_fr" : "Ok, fais comme chez toi ici. Et quand tu voudras tu peux parler à ???, il t'expliquera comment on influence un esprit.",
+		"texte_en" : "0",
+		"questions_fr": [],
+		"questions_en": []
+		}
+	]},
+	{"id":1, "textes":[
+		{"name":"Boby",
+		"texte_fr" : "teefsfsdphrase 1",
+		"texte_en" : "tesesfefsnglish 1",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Alex",
+		"texte_fr" : "tesefsef phrase 2",
+		"texte_en" : "tesefsefs english 2",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"Boby",
+		"texte_fr" : "tsefsefserase 3",
+		"texte_en" : "sfesefsef english 3",
+		"questions_fr": [],
+		"questions_en": []
+		},
+		{"name":"gagne souvenir",
+		"texte_fr" : "4",
+		"texte_en" : "sfesefsef english 3",
+		"questions_fr": [],
+		"questions_en": []
+		}
+	]}
+
+]
+
+
+}

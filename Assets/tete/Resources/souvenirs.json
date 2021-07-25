@@ -1,0 +1,9 @@
+﻿{
+"souvenirs":[
+	{"id": 0, "actif":true, "positionX":0, "positionY":0, "sName" : "il", "texte_fr":"Mon pronom est il", "texte_en":"My pronoun is he", "phraseName" : "pronom il", "numUtilisationMot" : [5], "numDejaUtilise" : [0]},
+	{"id": 1, "actif":true, "positionX":0, "positionY":0, "sName" : "garcon", "texte_fr":"Je suis un garçon", "texte_en":"I am a boy", "phraseName" : "pronom il", "numUtilisationMot" : [1], "numDejaUtilise" : [0]},
+	{"id": 2, "actif":true, "positionX":0, "positionY":0, "sName" : "Alex", "texte_fr":"Je m'appelle Alex", "texte_en":"My name is Alex", "phraseName" : "pronom il", "numUtilisationMot" : [1], "numDejaUtilise" : [0]},
+	{"id": 3, "actif":true, "positionX":0, "positionY":0, "sName" : "amis", "texte_fr":"Mes amis me respectent", "texte_en":"My friends respect me", "phraseName" : "pronom il", "numUtilisationMot" : [1], "numDejaUtilise" : [0]},
+	{"id": 4, "actif":false, "positionX":0, "positionY":0, "sName" : "test", "texte_fr":"blip bloup", "texte_en":"", "phraseName" : "pronom il", "numUtilisationMot" : [1], "numDejaUtilise" : [0]}
+	]
+}
