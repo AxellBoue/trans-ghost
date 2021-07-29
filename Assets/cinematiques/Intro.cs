@@ -13,6 +13,11 @@ public class Intro : MonoBehaviour
     public bool finAnim = false;
     Animator anim;
 
+    // pour mettre le player au bon endroit
+    Vector3 cinematicPosition;
+    GameObject soulPlayer;
+    private bool goesToPosition = false;
+
     // pour faire poper les traits
     public bool doPopTrait = false;
     public GameObject[] traitsPrefabs;
@@ -26,11 +31,13 @@ public class Intro : MonoBehaviour
         player = GameObject.FindObjectOfType<PlayerIntro>();
         anim = player.GetComponent<Animator>();
         player.setBloque(true);
-        StartCoroutine("afficheTutoLater");
         texteTuto = GameObject.Find("texteTuto");
         texteTuto.SetActive(false);
         texteIntro = GameObject.Find("texte intro");
         texteIntro.SetActive(false);
+
+        soulPlayer = transform.parent.GetChild(3).gameObject;
+        cinematicPosition = new Vector3(soulPlayer.transform.position.x,soulPlayer.transform.position.y,player.transform.position.z);
 
         parentTraits = transform.GetChild(0).GetComponent<Transform>();
 
@@ -38,6 +45,9 @@ public class Intro : MonoBehaviour
         {
             changeLangue("english");
         }
+
+        anim.Play("perso appear");
+        StartCoroutine("afficheTutoLater");
     }
 
     // Update is called once per frame
@@ -55,7 +65,7 @@ public class Intro : MonoBehaviour
         if (finAnim)
         {
             finAnim = false;
-            SceneManager.LoadScene("enferMain");
+            GameManager.instance.toEnfer();
         }
 
         if (doPopTrait)
@@ -68,11 +78,23 @@ public class Intro : MonoBehaviour
                 timeNextTrait = Random.Range(0.05f, 0.6f);
             }
         }
+
+        if (goesToPosition)
+        {
+            Vector3 mouvement = cinematicPosition - player.transform.position;
+            mouvement = mouvement.normalized;
+            player.transform.position += mouvement * 20 * Time.deltaTime;
+            if (Vector3.Distance(player.transform.position,cinematicPosition) < 0.2)
+            {
+                changementPersoFini();
+                goesToPosition = false;
+            }
+        }
     }
 
     IEnumerator afficheTutoLater()
     {
-        yield return new WaitForSeconds(2.0f);
+        yield return new WaitForSeconds(5.0f);
         texteIntro.SetActive(true);
         yield return new WaitForSeconds(2.0f);
         player.setBloque(false);
@@ -100,12 +122,25 @@ public class Intro : MonoBehaviour
         yield return new WaitForSeconds(6.0f);
         player.setBloque(true);
         anim.Play("transforme en ame");
+        StartCoroutine("deplacePersoLater");
+    }
+
+    IEnumerator deplacePersoLater()
+    {
+        yield return new WaitForSeconds(2.0f);
+        goesToPosition = true;
+    }
+
+    private void changementPersoFini()
+    {
+        player.gameObject.SetActive(false);
+        soulPlayer.SetActive(true);
         StartCoroutine("lanceAnimLater");
     }
 
     IEnumerator lanceAnimLater()
     {
-        yield return new WaitForSeconds(3.0f);
+        yield return new WaitForSeconds(0.5f);
         GameObject.Find("anim").GetComponent<Animator>().enabled = true;
         GameObject.Find("anim").GetComponent<Animator>().Play("animIntro");
     }

@@ -26,6 +26,8 @@ public class Souvenir : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     OuvreSouvenirBox ouvreBox;
     // pour la phrase
     GameObject phrase;
+    // pour lancer le bon dialogue du tuto
+    TutoTete tutoTete;
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +57,7 @@ public class Souvenir : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
             boxSouvenirsTete = GameObject.Find("BoxSouvenirsTete").GetComponent<Transform>();
             instanciePhrase();
             phrase.SetActive(isInTete);
+            tutoTete = GameObject.FindObjectOfType<TutoTete>();
         }
     }
 
@@ -102,7 +105,10 @@ public class Souvenir : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
                     souvenirBox.removeSouvenir(gameObject);
                     souvenirBox.hide();
                     StartCoroutine("affichePhraseLater");
-                    StartCoroutine("affichePhraseLater");
+                    if (tutoTete.waitForMemorie)
+                    {
+                        tutoTete.doTheThingWaited();
+                    }
                 }
                 infos.positionX = GetComponent<Transform>().position.x;
                 infos.positionY = GetComponent<Transform>().position.y;

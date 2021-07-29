@@ -50,7 +50,8 @@ public class PlayerIntro : MonoBehaviour
             {
                 StartCoroutine("finLater");
                 setBloque(true);
-                GameObject.Find("Alex").GetComponent<Animator>().Play("anim resurection");
+                GameObject.Find("Yared").GetComponent<Animator>().Play("anim resurection");
+                GetComponent<Animator>().Play("perso disappear");
                 feedBackInteraction.SetActive(false);
             }
         }

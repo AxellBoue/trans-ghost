@@ -54,6 +54,7 @@ public class SouvenirBox : MonoBehaviour
         // pour afficher les souvenirs à partir du json
         loadSouvenirs();
 
+
     }
 
     // Update is called once per frame

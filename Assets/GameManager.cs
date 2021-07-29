@@ -70,7 +70,6 @@ public class GameManager : MonoBehaviour
         else
         {
             infos.scene = "entreDansTete";
-            infos.hasBeenToTete = true;
             SceneManager.LoadScene("entreDansTete");
         }
     }

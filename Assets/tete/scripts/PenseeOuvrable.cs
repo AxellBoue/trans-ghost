@@ -13,6 +13,7 @@ public class PenseeOuvrable : MonoBehaviour
     private bool appuie = false;
     private float compteur = 0;
     private Animator anim;
+    TutoTete tutoTete;
 
     // Start is called before the first frame update
     void Start()
@@ -22,6 +23,7 @@ public class PenseeOuvrable : MonoBehaviour
         {
             anim.enabled = false;
         }
+        tutoTete = GameObject.FindObjectOfType<TutoTete>();
     }
 
     // Update is called once per frame
@@ -85,6 +87,16 @@ public class PenseeOuvrable : MonoBehaviour
         image = transform.GetChild(0).gameObject;
         gameObject.SetActive(infos.actif);
         image.SetActive(!infos.isOuverte);
+        if (!infos.isOuverte)
+        {
+            foreach (GameObject go in goAActiver)
+            {
+                if (go.GetComponent<PenseeOuvrable>() == null) // desactive les traits, les pensées se desactivent individuellement
+                {
+                    go.SetActive(false);
+                }
+            }
+        }
     }
 
     public void depliePensee()
@@ -100,8 +112,12 @@ public class PenseeOuvrable : MonoBehaviour
         foreach (GameObject go in goAActiver)
         {
             go.SetActive(true);
-            yield return new WaitForSeconds(0.8f);
+            yield return new WaitForSeconds(0.5f);
         }
         infos.isOuverte = true;
+        if (tutoTete.waitForUnfold)
+        {
+            tutoTete.doTheThingWaited();
+        }
     }
 }

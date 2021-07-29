@@ -31,6 +31,9 @@ public class MotSouvenir : MonoBehaviour, IPointerDownHandler
     private float vitesseChangement = 0.4f;
     private float iChangement = 0;
 
+    // pour le tuto
+    TutoTete tutoTete;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +45,7 @@ public class MotSouvenir : MonoBehaviour, IPointerDownHandler
         texteEn = transform.GetChild(1).GetComponent<Text>();
         infos.texteFr = texteFr.text;
         colorDepart = texteFr.color;
+        tutoTete = GameObject.FindObjectOfType<TutoTete>();
     }
 
     // Update is called once per frame
@@ -112,6 +116,10 @@ public class MotSouvenir : MonoBehaviour, IPointerDownHandler
             attendReaction = true;
             transform.position = motIsOn.transform.position;
             motIsOn.motPose(this);
+            if (tutoTete.waitForWord)
+            {
+                tutoTete.doTheThingWaited();
+            }
         }
         motIsOn = null;
     }
