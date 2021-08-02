@@ -69,6 +69,7 @@ public class TutoTete : MonoBehaviour
     private void startTuto()
     {
         tutoBox.gameObject.SetActive(true);
+        compteur = 0;
         afficheText();
     }
 

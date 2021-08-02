@@ -119,7 +119,7 @@ public class Intro : MonoBehaviour
 
     IEnumerator changePersoLater()
     {
-        yield return new WaitForSeconds(6.0f);
+        yield return new WaitForSeconds(5.0f);
         player.setBloque(true);
         anim.Play("transforme en ame");
         StartCoroutine("deplacePersoLater");

@@ -22,8 +22,8 @@ public class SouvenirBox : MonoBehaviour
     List<GameObject> souvenirsGO = new List<GameObject>();  // liste de tous les souvenirs actif et dans la boite à souvenirs
     SouvenirsAllList.souvenirInfo[] allSouvenirsInfos;
     SouvenirsAllList.souvenirInfo[] allSouvenirsToLoadInfos;
-    public float espacementSouvenir = 175;
-    public float position1erSouvenir = -423;
+    public float espacementSouvenir = 350;
+    public float position1erSouvenir = -822;
 
     // pour drag and drop uniquement si dans tête
     public bool isTete = false;
@@ -123,7 +123,7 @@ public class SouvenirBox : MonoBehaviour
                 newSouvenir.GetComponent<RectTransform>().anchoredPosition = Vector3.zero;
                 //newSouvenir.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal,160);
                 //newSouvenir.GetComponent<RectTransform>().SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, 175);
-                newSouvenir.GetComponent<RectTransform>().localScale = new Vector2(1.0f, 1.0f);
+                newSouvenir.GetComponent<RectTransform>().localScale = new Vector2(2.0f, 2.0f);
                 newSouvenir.GetComponent<Souvenir>().infos = s;
                 newSouvenir.GetComponent<Souvenir>().sceneIsTete = isTete;
                 newSouvenir.GetComponent<Souvenir>().initialise(false);
@@ -152,7 +152,7 @@ public class SouvenirBox : MonoBehaviour
             {
                 GameObject newSouvenir = Instantiate(souvenirPrefab);
                 newSouvenir.transform.SetParent(listeSouvenirsGO.transform); // passe par l'autre canvas pour pas que la taille fasse nimp ??? pas réussi à faire autrement
-                newSouvenir.GetComponent<RectTransform>().localScale = new Vector2(1.0f, 1.0f);
+                newSouvenir.GetComponent<RectTransform>().localScale = new Vector2(2.0f, 2.0f);
                 newSouvenir.transform.SetParent(boxSouvenirsTete.transform);
                 newSouvenir.GetComponent<Souvenir>().infos = s;
                 newSouvenir.transform.position = new Vector3(newSouvenir.GetComponent<Souvenir>().infos.positionX, newSouvenir.GetComponent<Souvenir>().infos.positionY, 0.0f);

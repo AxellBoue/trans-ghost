@@ -31,6 +31,7 @@ public class PlayerIntro : MonoBehaviour
         {
             changeLangue("english");
         }
+
     }
 
     // Update is called once per frame

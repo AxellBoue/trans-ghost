@@ -82,6 +82,7 @@ public class Menu : MonoBehaviour
     public void newGame(string numPartie)
     {
         GameManager.instance.infos.numSauvegarde = numPartie;
+        GameManager.instance.infos.hasBeenToTete = false;
         string path = Application.persistentDataPath + "/saveSouvenirsBox" + GameManager.instance.infos.numSauvegarde + ".json";
         if (File.Exists(path))
         {

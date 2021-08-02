@@ -31,7 +31,7 @@
 		"questions_fr": [],
 		"questions_en": []
 		},
-		{"name":"Alex",
+		{"name":"Yared",
 		"texte_fr" : "Merci, mais... C'est pas possible, mon père changera jamais d'avis.",
 		"texte_en" : "test english 3",
 		"questions_fr": [],
@@ -43,7 +43,7 @@
 		"questions_fr": [],
 		"questions_en": []
 		},
-		{"name":"Alex",
+		{"name":"Yared",
 		"texte_fr" : "De toute façon je suis mort, c'est bon c'est fini. J'ai pas envie d'y retourner.",
 		"texte_en" : "test english 3",
 		"questions_fr": [],
@@ -55,7 +55,7 @@
 		"questions_fr": [],
 		"questions_en": []
 		},
-		{"name":"Alex",
+		{"name":"Yared",
 		"texte_fr" : "...",
 		"texte_en" : "...",
 		"questions_fr": [],
@@ -73,7 +73,7 @@
 		"questions_fr": [],
 		"questions_en": []
 		},
-		{"name":"Alex", 
+		{"name":"Yared", 
 		"texte_fr" : "n° 12",
 		"texte_en" : "bla",
 		"questions_fr": [{"question1" : "Et pourquoi vous y retournez pas vous si c'est si bien ?",
@@ -88,7 +88,7 @@
 						}],
 		"questions_en": []
 		},
-		{"name":"Alex", 
+		{"name":"Yared", 
 		"texte_fr" : "n° 13",
 		"texte_en" : "bla",
 		"questions_fr": [{"question1" : "Et pourquoi vous y retournez pas vous si c'est si bien ?",
@@ -195,7 +195,7 @@
 		"questions_fr": [],
 		"questions_en": []
 		},
-		{"name":"Alex",
+		{"name":"Yared",
 		"texte_fr" : "tesefsef phrase 2",
 		"texte_en" : "tesefsefs english 2",
 		"questions_fr": [],
@@ -227,7 +227,7 @@
 		"questions_fr": [],
 		"questions_en": []
 		},
-		{"name":"Alex",
+		{"name":"Yared",
 		"texte_fr" : "tesefsef phrase 2",
 		"texte_en" : "tesefsefs english 2",
 		"questions_fr": [],

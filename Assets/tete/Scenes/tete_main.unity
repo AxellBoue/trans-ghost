@@ -804,8 +804,8 @@ RectTransform:
   m_AnchoredPosition: {x: 236, y: -911}
   m_SizeDelta: {x: 624.1631, y: 48.81436}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!61 &141956909
-BoxCollider2D:
+--- !u!60 &141956909
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -817,7 +817,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.5786743, y: 0.000022888184}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -827,9 +827,23 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 622.4336, y: 46.927567}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -115.59896, y: 74.39668}
+      - {x: -127.32781, y: 20.673462}
+      - {x: -314.38654, y: 22.721268}
+      - {x: -310.83298, y: -21.295761}
+      - {x: -110.602646, y: -23.239807}
+      - {x: -107.27085, y: -68.28443}
+      - {x: -23.145824, y: -116.82593}
+      - {x: 92.776794, y: -107.544464}
+      - {x: 111.73079, y: -23.012299}
+      - {x: 309.76117, y: -23.11026}
+      - {x: 311.51227, y: 20.91225}
+      - {x: 131.34233, y: 21.829773}
+      - {x: 114.910164, y: 86.07606}
+      - {x: 29.808582, y: 125.438934}
+      - {x: -73.358505, y: 107.77201}
 --- !u!114 &141956910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6044,8 +6058,8 @@ RectTransform:
   m_AnchoredPosition: {x: 302, y: 269}
   m_SizeDelta: {x: 929.4584, y: 48.81436}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!61 &1567921541
-BoxCollider2D:
+--- !u!60 &1567921541
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -6057,7 +6071,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.8188782, y: 0.000022888184}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6067,9 +6081,25 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 928.4223, y: 46.927567}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: -3.3246346, y: 125.376945}
+      - {x: -62.97391, y: 112.29074}
+      - {x: -111.61572, y: 81.86807}
+      - {x: -128.00046, y: 21.034065}
+      - {x: -462.9018, y: 20.506264}
+      - {x: -463.7211, y: -23.682922}
+      - {x: -115.35104, y: -23.111458}
+      - {x: -83.573105, y: -96.91106}
+      - {x: -9.548256, y: -118.71376}
+      - {x: 88.042854, y: -106.10325}
+      - {x: 120.18342, y: -23.910126}
+      - {x: 534.37067, y: -24.963974}
+      - {x: 538.6144, y: 21.284767}
+      - {x: 127.32398, y: 23.512234}
+      - {x: 120.39247, y: 82.964195}
+      - {x: 65.95872, y: 114.61481}
+      - {x: 7.2565603, y: 121.0145}
 --- !u!114 &1567921542
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6655,8 +6685,8 @@ RectTransform:
   m_AnchoredPosition: {x: -805, y: 65}
   m_SizeDelta: {x: 624.1631, y: 48.81436}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!61 &1793741593
-BoxCollider2D:
+--- !u!60 &1793741593
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -6668,7 +6698,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.5786743, y: 0.000022888184}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -6678,9 +6708,24 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 622.4336, y: 46.927567}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 26.915817, y: 121.446945}
+      - {x: -68.7722, y: 109.67527}
+      - {x: -119.17236, y: 72.29361}
+      - {x: -129.17664, y: 21.940605}
+      - {x: -312.1001, y: 22.721252}
+      - {x: -311.90793, y: -21.412231}
+      - {x: -123.15239, y: -23.171307}
+      - {x: -111.48781, y: -68.0262}
+      - {x: -85.311584, y: -105.01663}
+      - {x: -8.590332, y: -123.13396}
+      - {x: 95.6221, y: -101.5369}
+      - {x: 119.96529, y: -22.926418}
+      - {x: 354.0675, y: -24.769516}
+      - {x: 350.4142, y: 23.198685}
+      - {x: 128.04375, y: 23.991241}
+      - {x: 94.69541, y: 99.76947}
 --- !u!114 &1793741594
 MonoBehaviour:
   m_ObjectHideFlags: 0

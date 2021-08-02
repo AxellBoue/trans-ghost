@@ -95,6 +95,11 @@ public class Dialogue : MonoBehaviour
             if (i == 0)
             {
                 startDialogue(idDialogue);
+                if (!perso.haveHadTuto)
+                {
+                    perso.haveHadTuto = true;
+                    perso.hideTuto();
+                }
             }
             else
             {

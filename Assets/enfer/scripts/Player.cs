@@ -16,6 +16,10 @@ public class Player : MonoBehaviour
     GameObject feedBackInteraction;
     Dialogue boxDialogue;
     bool bloque = false;
+    // pour tuto
+    private GameObject tutoEnfer;
+    public bool haveHadTuto = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -25,6 +29,18 @@ public class Player : MonoBehaviour
         feedBackInteraction.SetActive(false);
         boxDialogue = GameObject.FindObjectOfType<Dialogue>();
         boxDialogue.gameObject.SetActive(false);
+        tutoEnfer = GameObject.Find("tuto espace");
+        tutoEnfer.SetActive(false);
+        if (GameManager.instance.infos.hasBeenToTete)
+        {
+            haveHadTuto = true;
+            GameObject.Find("teleporte4").SetActive(false);
+        }
+        else
+        {
+            bloque = true;
+            StartCoroutine("cacheTeleporteLater");
+        }
     }
 
     // Update is called once per frame
@@ -54,6 +70,10 @@ public class Player : MonoBehaviour
         listePnjProches.Add(newPnj);
         pnjActif = newPnj;
         feedBackInteraction.SetActive (true);
+        if (!GameManager.instance.infos.hasBeenToTete && !haveHadTuto)
+        {
+            tutoEnfer.SetActive(true);
+        }
     }
 
     public void removePnj(Pnj pnjAVirer)
@@ -72,6 +92,22 @@ public class Player : MonoBehaviour
             pnjActif = null;
             feedBackInteraction.SetActive(false);
         }
+        if (!GameManager.instance.infos.hasBeenToTete && !haveHadTuto)
+        {
+            tutoEnfer.SetActive(false);
+        }
+    }
+
+    public void hideTuto()
+    {
+        tutoEnfer.SetActive(false);
+    }
+
+    IEnumerator cacheTeleporteLater()
+    {
+        yield return new WaitForSeconds(2.0f);
+        bloque = false;
+        GameObject.Find("teleporte4").SetActive(false);
     }
 
     // bloque
