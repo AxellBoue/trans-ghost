@@ -18,8 +18,8 @@ public class TutoTete : MonoBehaviour
     string[] tutoFr = new string[] {"Pour faire réfléchir ton père et qu'il change d'avis, tu vas partager des souvenirs avec lui.",
     "Les souvenirs lui évoqueront des pensées, et tu pourras les mélanger avec ses pensées actuelles. Essaie de déposer un souvenir dans son esprit.",
     "Maintenant tu peux déplacer un des mots jaunes en cliquant dessus, et le déposer en cliquant à nouveau.",
-    "Voilà. Bon, si tu met un mot qui n'a aucun rapport ou que tu vas trop vite et que tu en mets un qui est trop éloigné de son mode de pensée actuel, il le rejettera. Tu vas devoir être patient et y aller progressiement.",
-    "La plupart des pensées sont basées sur d'autres pensées ou croyaces. Pour réveler le pbases d'une pensée, reste cliqué dessu quelques instants",
+    "Voilà. Bon, si tu met un mot qui n'a aucun rapport ou que tu vas trop vite et que tu en mets un qui est trop éloigné de son mode de pensée actuel, il le rejettera. Tu vas devoir être patient et y aller progressivement.",
+    "La plupart des pensées sont basées sur d'autres pensées ou croyaces. Pour réveler les bases d'une pensée, reste cliqué dessu quelques instants",
     "Voilà, une fois que tu auras changé ces nouelles pensées, la pensée initiale devrait être modifiabe",
     "Pour te déplacer dans l'esprit, click et bouge en restant appuyé.",
     "Essaie par exemple de partager le souvenir XXX, et de remplacex XXX mot",
@@ -119,14 +119,14 @@ public class TutoTete : MonoBehaviour
         compteur += 1;
     }
 
-    public void doTheThingWaited()
+    public void doTheThingWaited(float time = 1.0f)
     {
-        StartCoroutine("afficheTexteLater");
+        StartCoroutine("afficheTexteLater", time);
     }
 
-    IEnumerator afficheTexteLater()
+    IEnumerator afficheTexteLater(float time)
     {
-        yield return new WaitForSeconds(1.0f);
+        yield return new WaitForSeconds(time);
         waitForMemorie = false;
         waitForWord = false;
         waitForUnfold = false;

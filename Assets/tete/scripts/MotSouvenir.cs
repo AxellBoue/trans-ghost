@@ -118,7 +118,7 @@ public class MotSouvenir : MonoBehaviour, IPointerDownHandler
             motIsOn.motPose(this);
             if (tutoTete.waitForWord)
             {
-                tutoTete.doTheThingWaited();
+                tutoTete.doTheThingWaited(5.0f);
             }
         }
         motIsOn = null;
