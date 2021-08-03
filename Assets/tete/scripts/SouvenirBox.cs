@@ -10,6 +10,7 @@ public class SouvenirBox : MonoBehaviour
     Vector2 positionBoiteAffichee;
     Vector2 positionBoiteCachee = new Vector2(0.0f,0.0f);
     public bool hidden = false;
+    RectTransform boutonHideShow;
 
     // pour bouger les souvenirs dans la liste avec les fleches droite gauche
     GameObject listeSouvenirsGO; // le game object qui contient les souvenirs dans la boite
@@ -43,6 +44,7 @@ public class SouvenirBox : MonoBehaviour
 
         // pour afficher et cacher la liste
         positionBoiteAffichee = GetComponent<RectTransform>().anchoredPosition;
+        boutonHideShow = transform.GetChild(0).GetComponent<RectTransform>();
         hide();
 
         // pour bouger les souvenirs dans la liste
@@ -66,12 +68,14 @@ public class SouvenirBox : MonoBehaviour
     public void hide()
     {
         GetComponent<RectTransform>().anchoredPosition = positionBoiteCachee;
+        boutonHideShow.localRotation = Quaternion.Euler(new Vector3(0,0,0));
         hidden = true;
     }
 
     public void show()
     {
         GetComponent<RectTransform>().anchoredPosition = positionBoiteAffichee;
+        boutonHideShow.localRotation = Quaternion.Euler(new Vector3(0, 0, 180));
         hidden = false;
     }
 

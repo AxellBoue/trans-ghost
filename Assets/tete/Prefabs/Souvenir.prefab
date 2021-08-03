@@ -38,7 +38,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -423, y: -0.00002117162}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 160, y: 175.54144}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1201398332779509377
@@ -69,8 +69,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: c8a11e4bd4d5aae439038f19902e2955, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -93,6 +93,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -142,6 +143,9 @@ MonoBehaviour:
     sName: 
     texte_fr: 
     texte_en: 
+    phraseName: 
+    numUtilisationMot: 
+    numDejaUtilises: 
   dansTete: 0
   sceneIsTete: 0
   numDansListe: 0
@@ -179,8 +183,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1, y: -13.893}
-  m_SizeDelta: {x: -15.578964, y: -42.637405}
+  m_AnchoredPosition: {x: -0.47699738, y: -20.725197}
+  m_SizeDelta: {x: -27.3753, y: -66.7508}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1201398334024040034
 CanvasRenderer:
@@ -254,8 +258,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1.4800034, y: 65.17}
-  m_SizeDelta: {x: -20.546051, y: -149.77866}
+  m_AnchoredPosition: {x: -0.4769516, y: 59.7444}
+  m_SizeDelta: {x: -27.375, y: -138.9276}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7281399030240771822
 CanvasRenderer:
@@ -298,4 +302,6 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 'New Text
+
+'

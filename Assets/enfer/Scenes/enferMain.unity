@@ -881,10 +881,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 2560, y: 1440}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -1681,22 +1681,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 461614157}
     m_Modifications:
-    - target: {fileID: 979577918486524654, guid: f8ded1abd52a6c442a417030869d27d0, type: 3}
-      propertyPath: m_Padding.x
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 979577918486524654, guid: f8ded1abd52a6c442a417030869d27d0, type: 3}
-      propertyPath: m_Padding.z
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 979577918486524657, guid: f8ded1abd52a6c442a417030869d27d0, type: 3}
-      propertyPath: espacementSouvenir
-      value: 345
-      objectReference: {fileID: 0}
-    - target: {fileID: 979577918486524657, guid: f8ded1abd52a6c442a417030869d27d0, type: 3}
-      propertyPath: position1erSouvenir
-      value: -810
-      objectReference: {fileID: 0}
     - target: {fileID: 979577918486524658, guid: f8ded1abd52a6c442a417030869d27d0, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3098,11 +3082,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4922639694605144590, guid: d615f1cc57b6f114cbcdfa4f0ff63d3c, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 354.50827
+      value: 742.25
       objectReference: {fileID: 0}
     - target: {fileID: 4922639694605144590, guid: d615f1cc57b6f114cbcdfa4f0ff63d3c, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 388.8504
+      value: 661.01
       objectReference: {fileID: 0}
     - target: {fileID: 4922639694605144590, guid: d615f1cc57b6f114cbcdfa4f0ff63d3c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3134,11 +3118,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4922639694605144590, guid: d615f1cc57b6f114cbcdfa4f0ff63d3c, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 177.30005
+      value: 371.16
       objectReference: {fileID: 0}
     - target: {fileID: 4922639694605144590, guid: d615f1cc57b6f114cbcdfa4f0ff63d3c, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -194.5
+      value: -330.58
       objectReference: {fileID: 0}
     - target: {fileID: 4922639694605144590, guid: d615f1cc57b6f114cbcdfa4f0ff63d3c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

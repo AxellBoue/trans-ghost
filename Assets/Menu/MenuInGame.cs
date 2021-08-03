@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class MenuInGame : MonoBehaviour
 {
     private Vector2 positionOuvert;
-    private Vector2 positionFerme = new Vector2 (177,194);
+    private Vector2 positionFerme = new Vector2 (371,336);
     private bool ouvert = true;
     private GameObject menuOptions;
 
@@ -15,11 +15,13 @@ public class MenuInGame : MonoBehaviour
     RectTransform fleche;
     BoutonMenu[] BoutonsMenuCourant;
     int numBouton = 0;
+    RectTransform boutonOuvreFerme;
 
     // Start is called before the first frame update
     void Start()
     {
         positionOuvert = GetComponent<RectTransform>().anchoredPosition;
+        boutonOuvreFerme = transform.GetChild(5).GetComponent<RectTransform>();
         ouvrirFermer();
         menuOptions = transform.GetChild(6).gameObject;
         fleche = transform.GetChild(0).GetComponent<RectTransform>();
@@ -67,6 +69,7 @@ public class MenuInGame : MonoBehaviour
             ouvert = false;
             fleche = transform.GetChild(0).GetComponent<RectTransform>();
             fleche.GetComponent<Image>().enabled = false;
+            boutonOuvreFerme.localRotation = Quaternion.Euler(Vector3.zero);
             // enleve la pause, et si un truc d'ui est ouvert, remet le focus dessus
         }
         else // l'ouvre
@@ -77,6 +80,7 @@ public class MenuInGame : MonoBehaviour
             fleche.GetComponent<Image>().enabled = true;
             BoutonsMenuCourant = transform.GetComponentsInChildren<BoutonMenu>();
             selectBouton(BoutonsMenuCourant[0]);
+            boutonOuvreFerme.localRotation = Quaternion.Euler(new Vector3(0,0,180));
             // met pause
             // met le focus sur le premier bouton
         }
